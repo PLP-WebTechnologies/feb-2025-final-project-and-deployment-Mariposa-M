@@ -1,6 +1,3 @@
-
-// Check Validations
-// Email validation been checked automatically through the input type in HTML file
 const validationForm = () => {
   document.getElementById('submitBtn').addEventListener('click', () => {
     if (
@@ -17,39 +14,8 @@ const validationForm = () => {
   });
 };
 
-// Dark/light Mode
-const switchMode = () => {
-  document.getElementById('modeBtn').addEventListener('click', () => {
-    document.body.classList.toggle('darkMode');
-  });
-};
 
-// Smooth Scrolling along with CSS property
-const scrollTopSmooth = () => {
-  document.getElementById('topBtn').addEventListener('click', () => {
-    scrollTo({ top: 0, behavior: 'smooth' });
-  });
-};
-
-// Scroll to Top button
-const scrollTop = () => {
-  window.addEventListener('scroll', () => {
-    if (
-      document.body.scrollTop > 20 ||
-      document.documentElement.scrollTop > 20
-    ) {
-      document.getElementById('topBtn').style.display = 'block';
-    } else {
-      document.getElementById('topBtn').style.display = 'none';
-    }
-  });
-};
-
-// Running all after loading
 document.addEventListener('DOMContentLoaded', () => {
   console.log('JavaScript is working!');
-  switchMode();
   validationForm();
-  scrollTopSmooth();
-  scrollTop();
 });
