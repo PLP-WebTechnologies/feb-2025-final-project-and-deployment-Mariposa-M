@@ -1,116 +1,147 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="PLP Web Project">
-        <meta name="keywords" content="HTML, CSS, JavaScript">
-        <link rel="stylesheet" href="../../style.css">
-        <link rel="shortcut icon" href="../../assets/icons/blog-icon.svg" type="image/x-icon">
-        <title>API Design: From Basics to Best Practices | PLPBlog</title>
-    </head>
-    <body>
-
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="PLP Web Project" />
+    <meta name="keywords" content="HTML, CSS, JavaScript" />
+    <link rel="stylesheet" href="../../style.css" />
+    <link
+      rel="shortcut icon"
+      href="../../assets/icons/blog-icon.svg"
+      type="image/x-icon"
+    />
+    <title>API Design: From Basics to Best Practices | PLPBlog</title>
+  </head>
+  <body>
     <div class="navbar">
       <a href="../../index.html">Home</a>
       <a href="../services.html">Services</a>
       <a href="../about-us.html">About Us</a>
       <a href="../contact-us.html">Contact Us</a>
     </div>
-        <form class="Search" action="/pages/search-results.html">
-            <input type="text" name="search" placeholder="Search ...">
-            <button type="submit">search</button>
-        </form>
-        <h1> API Design: From Basics to Best Practices </h1>
-        <figure>
-            <img class="blog-Img" src="../../assets/images/blog-images/apiBlog.jfif" alt="API Connecting like an access point">
-            <figcaption> Fig.1 - API Design: Basics to Best Practices </figcaption>
-        </figure>
-        <h2 class="blog-h2">Introduction</h2>
-        <p><strong><em><u>Application Programming Interfaces (APIs)</u></em></strong> are the backbone of modern software
-            development. They enable diverse applications to communicate and share data seamlessly, making it possible to
-            integrate different systems and services effectively. Whether you’re building a simple API for a personal
-            project or a complex one for a large-scale enterprise application, following good API design principles is
-            crucial for creating robust, scalable, and user-friendly interfaces.
-        </p>
-        <p>In this comprehensive guide, we will walk you through the fundamentals of API design, progressing from the basics
-            to advanced best practices. By the end of this blog, you will have a solid understanding of how to design APIs
-            that are efficient, secure, and easy to use.
-        </p>
-        <h2 class="blog-h2">Understanding APIs</h2>
-        <h3 class="blog-h3">What is an API?</h3>
-        <p><strong><em><u>An API (Application Programming Interface)</u></em></strong>  is a set of rules and protocols for building and interacting with
-            software applications. It defines the methods and data formats that applications use to communicate with
-            external systems or services. APIs enable different software components to interact with each other, allowing developers
-            to use functionalities of other applications without needing to understand their internal workings.
-        </p>
-        <h2 class="blog-h2">Types of APIs</h2>
-        <h3 class="blog-h3">1. REST (Representational State Transfer):</h3>
-        Uses standard HTTP methods.
-        Stateless architecture.
-        Resources identified by URLs.
-        Widely used due to simplicity and scalability.
-        <h3 class="blog-h3">2. SOAP (Simple Object Access Protocol):</h3>
-        Protocol for exchanging structured information.
-        Relies on XML.
-        Supports complex operations and higher security.
-        Used in enterprise-level applications.
-        <h3 class="blog-h3">3. GraphQL:</h3>
-        <ul>
-            <li> Allows clients to request exactly the data they need. </li>
-            <li> Reduces over-fetching and under-fetching of data.</li>
-            <li> Supports more flexible queries compared to REST.</li>
-        </ul>
-        <h3 class="blog-h3">4. gRPC:</h3>
-        <ul>
-            <li>Uses HTTP/2 for transport and protocol buffers for data serialization.</li>
-            <li>Supports bi-directional streaming.</li>
-            <li>High performance and suitable for microservices.</li>
-        </ul>
-        <h2 class="blog-h2">Basic Principles of API Design</h2>
-        <h3 class="blog-h3">1. Consistency</h3>
-        <p>Consistency is key to a well-designed API. Ensure that your API is consistent in its structure, naming
-            conventions, and error handling. For instance:
-        </p>
-        <ul>
-            <li>Use similar naming conventions for endpoints.</li>
-            <li>Apply uniform formats for responses and errors.</li>
-            <li>Standardize parameter names and data types.</li>
-        </ul>
-        <h3 class="blog-h3">2. Statelessness</h3>
-        <p></p>
-        Design your API to be stateless. Each request from a client should contain all the information needed to
-        process the
-        request. This simplifies the server’s design and improves scalability. Statelessness means that the server does not
-        store any client context between requests, which helps in distributing the load across multiple servers.</p>
-        <h3 class="blog-h3">3. Resource-Oriented Design</h3>
-        <p>Treat everything in your API as a resource. Resources can be objects, data, or services, and each should have a
-            unique identifier (typically a URL in RESTful APIs). Design endpoints to represent resources and use HTTP
-            methods to
-            perform actions on them.
-        </p>
-        <h3 class="blog-h3">4. Use Standard HTTP Methods</h3>
-        <p>Follow the HTTP methods convention to perform operations on resources:
-            GET for retrieving resources.
-            POST for creating resources.
-            PUT for updating resources.
-            DELETE for deleting resources. Using these standard methods makes your API intuitive and easier to use.
-        </p>
-        <h2 class="blog-h2">Conclusion</h2>
-        <p>Good API design is fundamental to building scalable, maintainable, and user-friendly applications. By following
-            these principles and best practices, you can create APIs that are not only functional but also delightful to
-            use.
-            Start with the basics, focus on consistency and simplicity, and gradually incorporate advanced features as your
-            API
-            evolves.
-        </p>
-        <p>Remember, the goal of a well-designed API is to make life easier for developers, enabling them to build powerful
-            applications with minimal friction. Keep learning, iterating, and improving your API design skills. Happy
-            coding!
-        </p>
-        <blockquote cite="https://medium.com/dev-genius/api-design-from-basics-to-best-practices-49bbb29cf696">~ Quoted From Seliesh Jacob @ Medium.com ~ </blockquote>
-        <footer>
-            <p> All rights reserved © 2025 </p>
-        </footer>
-    </body>
+    <div>
+      <h1>API Design: From Basics to Best Practices</h1>
+      <figure>
+        <img
+          class="blog-Img"
+          src="../../assets/images/blog-images/apiBlog.jfif"
+          alt="API Connecting like an access point"
+        />
+        <figcaption>Fig.1 - API Design: Basics to Best Practices</figcaption>
+      </figure>
+      <h2 class="blog-h2">Introduction</h2>
+      <p>
+        <strong
+          ><em><u>Application Programming Interfaces (APIs)</u></em></strong
+        >
+        are the backbone of modern software development. They enable diverse
+        applications to communicate and share data seamlessly, making it
+        possible to integrate different systems and services effectively.
+        Whether you’re building a simple API for a personal project or a complex
+        one for a large-scale enterprise application, following good API design
+        principles is crucial for creating robust, scalable, and user-friendly
+        interfaces.
+      </p>
+      <p>
+        In this comprehensive guide, we will walk you through the fundamentals
+        of API design, progressing from the basics to advanced best practices.
+        By the end of this blog, you will have a solid understanding of how to
+        design APIs that are efficient, secure, and easy to use.
+      </p>
+      <h2 class="blog-h2">Understanding APIs</h2>
+      <h3 class="blog-h3">What is an API?</h3>
+      <p>
+        <strong
+          ><em><u>An API (Application Programming Interface)</u></em></strong
+        >
+        is a set of rules and protocols for building and interacting with
+        software applications. It defines the methods and data formats that
+        applications use to communicate with external systems or services. APIs
+        enable different software components to interact with each other,
+        allowing developers to use functionalities of other applications without
+        needing to understand their internal workings.
+      </p>
+      <h2 class="blog-h2">Types of APIs</h2>
+      <h3 class="blog-h3">1. REST (Representational State Transfer):</h3>
+      Uses standard HTTP methods. Stateless architecture. Resources identified
+      by URLs. Widely used due to simplicity and scalability.
+      <h3 class="blog-h3">2. SOAP (Simple Object Access Protocol):</h3>
+      Protocol for exchanging structured information. Relies on XML. Supports
+      complex operations and higher security. Used in enterprise-level
+      applications.
+      <h3 class="blog-h3">3. GraphQL:</h3>
+      <ul>
+        <li>Allows clients to request exactly the data they need.</li>
+        <li>Reduces over-fetching and under-fetching of data.</li>
+        <li>Supports more flexible queries compared to REST.</li>
+      </ul>
+      <h3 class="blog-h3">4. gRPC:</h3>
+      <ul>
+        <li>
+          Uses HTTP/2 for transport and protocol buffers for data serialization.
+        </li>
+        <li>Supports bi-directional streaming.</li>
+        <li>High performance and suitable for microservices.</li>
+      </ul>
+      <h2 class="blog-h2">Basic Principles of API Design</h2>
+      <h3 class="blog-h3">1. Consistency</h3>
+      <p>
+        Consistency is key to a well-designed API. Ensure that your API is
+        consistent in its structure, naming conventions, and error handling. For
+        instance:
+      </p>
+      <ul>
+        <li>Use similar naming conventions for endpoints.</li>
+        <li>Apply uniform formats for responses and errors.</li>
+        <li>Standardize parameter names and data types.</li>
+      </ul>
+      <h3 class="blog-h3">2. Statelessness</h3>
+      <p>
+        Design your API to be stateless. Each request from a client should
+        contain all the information needed to process the request. This
+        simplifies the server’s design and improves scalability. Statelessness
+        means that the server does not store any client context between
+        requests, which helps in distributing the load across multiple servers.
+      </p>
+      <h3 class="blog-h3">3. Resource-Oriented Design</h3>
+      <p>
+        Treat everything in your API as a resource. Resources can be objects,
+        data, or services, and each should have a unique identifier (typically a
+        URL in RESTful APIs). Design endpoints to represent resources and use
+        HTTP methods to perform actions on them.
+      </p>
+      <h3 class="blog-h3">4. Use Standard HTTP Methods</h3>
+      <p>
+        Follow the HTTP methods convention to perform operations on resources:
+        GET for retrieving resources. POST for creating resources. PUT for
+        updating resources. DELETE for deleting resources. Using these standard
+        methods makes your API intuitive and easier to use.
+      </p>
+      <h2 class="blog-h2">Conclusion</h2>
+      <p>
+        Good API design is fundamental to building scalable, maintainable, and
+        user-friendly applications. By following these principles and best
+        practices, you can create APIs that are not only functional but also
+        delightful to use. Start with the basics, focus on consistency and
+        simplicity, and gradually incorporate advanced features as your API
+        evolves.
+      </p>
+      <p>
+        Remember, the goal of a well-designed API is to make life easier for
+        developers, enabling them to build powerful applications with minimal
+        friction. Keep learning, iterating, and improving your API design
+        skills. Happy coding!
+      </p>
+      <blockquote
+        cite="https://medium.com/dev-genius/api-design-from-basics-to-best-practices-49bbb29cf696"
+      >
+        ~ Quoted From Seliesh Jacob @ Medium.com ~
+      </blockquote>
+    </div>
+    <button id="topBtn">Top</button>
+    <footer>
+      <p>All rights reserved © 2025</p>
+    </footer>
+  </body>
 </html>

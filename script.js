@@ -49,7 +49,6 @@ const scrollTop = () => {
 document.addEventListener('DOMContentLoaded', () => {
   console.log('JavaScript is working!');
   switchMode();
-  updatingAboutMeSection();
   validationForm();
   scrollTopSmooth();
   scrollTop();
